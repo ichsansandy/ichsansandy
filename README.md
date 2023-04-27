@@ -2,12 +2,15 @@
 
 # 💫 About Me:
 
-<p align="right">
-<img src="https://visitcount.itsvg.in/api?id=ichsansandy&icon=0&color=2"/>
+<p align="middle">
+<img align="right" src="https://visitcount.itsvg.in/api?id=ichsansandy&icon=0&color=2"/>
+<p align="left">
+  Hi I am a self-taught developer, currently learning in ReactJS, Java, and Ruby
+</p>
 
 </p>
 
-Hi I am a self-taught developer, currently learning in ReactJS, Java, and Ruby
+
 
 <p align='middle' style="clear:both">
   <img align="center" width='50%' src="https://github-readme-stats.vercel.app/api?username=ichsansandy&theme=default&hide_border=false&include_all_commits=true&count_private=false&show_icons=true" />
