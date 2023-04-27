@@ -2,11 +2,11 @@
 
 # 💫 About Me:
 
-<div style="float:right">
+<p align="right">
+<img src="https://visitcount.itsvg.in/api?id=ichsansandy&icon=0&color=2"/>
+<!-- [![](https://visitcount.itsvg.in/api?id=ichsansandy&icon=0&color=2)](https://visitcount.itsvg.in) -->
 
-[![](https://visitcount.itsvg.in/api?id=ichsansandy&icon=0&color=2)](https://visitcount.itsvg.in)
-
-</div>
+</p>
 
 Hi I am a self-taught developer, currently learning in ReactJS, Java, and Ruby
 
