@@ -12,9 +12,9 @@
 
 
 
-<p align='middle' style="clear:both">
-  <img align="center" width='50%' src="https://github-readme-stats.vercel.app/api?username=ichsansandy&theme=default&hide_border=false&include_all_commits=true&count_private=false&show_icons=true" />
-  <img align="center" width='50%' src="https://github-readme-streak-stats.herokuapp.com/?user=ichsansandy&theme=default&hide_border=false" />
+<p align='center' style="">
+  <img  width='45.5%' src="https://github-readme-stats.vercel.app/api?username=ichsansandy&theme=default&hide_border=false&include_all_commits=true&count_private=false&show_icons=true" />
+  <img  width='48%' src="https://github-readme-streak-stats.herokuapp.com/?user=ichsansandy&theme=default&hide_border=false" />
 </p>
 
 <p align="middle">
