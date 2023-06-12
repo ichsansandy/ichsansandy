@@ -24,6 +24,10 @@
 <a href="https://linkedin.com/in/ichsans">
 <img width="13%" src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white"/>
 </a>
+<a href="mailto:ichsan2668@gmail.com">
+<img width="10%" src="https://img.shields.io/badge/Gmail-D14836.svg?logo=Gmail&logoColor=white"/>
+</a>
+  
 </p>
 
 # 💻 Tech Stack:
