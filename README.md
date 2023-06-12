@@ -5,7 +5,7 @@
 <p align="middle">
 <img align="right" src="https://visitcount.itsvg.in/api?id=ichsansandy&icon=0&color=2"/>
 <p align="left">
-  Hi I am a self-taught developer, currently learning in ReactJS, Java, and Ruby
+  Hi, I am a self-taught developer, currently learning ReactJS, Java SpringBoot, and Ruby on Rails
 </p>
 
 </p>
