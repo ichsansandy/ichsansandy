@@ -1,7 +1,9 @@
 ---
-author: jim-halpert
-categories: ["insights"]
-date: 08/10/2021
+author:
+  name: dwight-schrute
+  avatar: ./images/dwight-avatar.jpg
+categories: ['insights']
+date: 08-10-2021
 featured: false
 image: ./images/concert.jpg
 title: Live music is crucial

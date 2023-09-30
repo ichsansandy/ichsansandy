@@ -1,0 +1,45 @@
+---
+import { getCollection, CollectionEntry } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
+import Image from 'astro/components/Image.astro'
+
+export const getStaticPaths = async () => {
+	const blogs = await getCollection('blogs')
+
+	const paths = blogs.map((blog: CollectionEntry<'blogs'>) => {
+		return {
+			params: {
+				slug: blog.slug
+			},
+			props: {
+				blog
+			}
+		}
+	})
+
+	return paths
+}
+
+type Props = {
+	blog: CollectionEntry<'blogs'>
+}
+
+const { blog } = Astro.props
+---
+
+<Layout title={`${blog.data.title} 🗒`}>
+	<main class="mx-[10vw] grid justify-center py-[72px] sm:py-[78px]">
+		<div>
+			<button></button>
+		</div>
+		<h1 class="my-16 text-center">{blog.data.title}</h1>
+		<Image
+			src={blog.data.image}
+			alt={blog.data.title}
+			width={1024}
+			height={1024 / 1.5}
+			format="webp"
+			class="mb-16 rounded-2xl object-cover shadow-xl"
+		/>
+	</main>
+</Layout>

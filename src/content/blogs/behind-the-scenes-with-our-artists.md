@@ -1,7 +1,9 @@
 ---
-author: dwight-schrute
-categories: ["studio tips"]
-date: 08/10/2021
+author:
+  name: dwight-schrute
+  avatar: ./images/dwight-avatar.jpg
+categories: ['studio tips']
+date: 08-10-2023
 featured: false
 image: ./images/photoshoot.jpg
 title: Behind-the-scenes with our artists

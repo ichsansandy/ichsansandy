@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets'
+import { getEntryBySlug, type CollectionEntry } from 'astro:content'
+
+type Props = {
+	blog: CollectionEntry<'blogs'>
+}
+
+const { blog } = Astro.props
+---
+
+<a
+	class="grid max-w-[650px] justify-center rounded-xl border-4 border-background p-2 odd:justify-self-end hover:border-content/40 sm:p-10"
+	href={`/blog/${blog.slug}`}
+>
+	<Image
+		src={blog.data.image}
+		alt={blog.data.title}
+		width={600}
+		height={600 / 1.5}
+		format="webp"
+		class="aspect-thumbnail mb-6 rounded-2xl object-cover shadow-xl"
+	/>
+
+	<h1 class="mb-4 inline-block text-lg font-semibold text-content sm:text-4xl">
+		{blog.data.title}
+	</h1>
+
+	<p class="line-clamp-2 text-xs text-content/50 md:text-2xl">
+		{blog.body}
+	</p>
+
+	<div class="mt-5 flex gap-3 items-center">
+		<Image
+			src={blog.data.author.avatar}
+			alt={blog.data.author.name}
+			width={100}
+			height={100}
+			format="webp"
+			class="aspect-thumbnail aspect-square w-10 sm:w-14 rounded-full object-cover shadow-xl"
+		/>
+		<div class="text-xs sm:text-base">
+			<h1 class="capitalize mb-1">
+				{blog.data.author.name.split('-').join(' ')}
+			</h1>
+      <p>
+        {blog.data.date}
+      </p>
+		</div>
+	</div>
+</a>

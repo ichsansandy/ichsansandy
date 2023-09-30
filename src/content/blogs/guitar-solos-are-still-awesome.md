@@ -1,7 +1,9 @@
 ---
-author: jim-halpert
-categories: ["career advice"]
-date: 08/10/2021
+author:
+  name: dwight-schrute
+  avatar: ./images/dwight-avatar.jpg
+categories: ['career advice']
+date: 08-10-2021
 featured: false
 image: ./images/guitarist.jpg
 title: Guitar solos are still awesome

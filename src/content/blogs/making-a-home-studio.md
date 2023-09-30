@@ -1,7 +1,9 @@
 ---
-author: dwight-schrute
-categories: ["studio tips"]
-date: 08/10/2021
+author:
+  name: dwight-schrute
+  avatar: ./images/dwight-avatar.jpg
+categories: ['studio tips']
+date: 08-10-2021
 featured: false
 image: ./images/studio.jpg
 title: Making a home studio
