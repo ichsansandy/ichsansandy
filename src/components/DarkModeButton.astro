@@ -5,7 +5,7 @@
 <div
 	id="darkmodebutton"
 	class="absolute left-[50%] top-[50%] flex aspect-square w-[54px] translate-x-[-50%] translate-y-[-50%] transform cursor-pointer items-center justify-center bg-background hover:opacity-60 md:w-[64px]"
-	transition:persist
+	
 >
 	<div
 		id="sun"
@@ -30,27 +30,6 @@
 	</div>
 </div>
 
-<script>
-	const sun = document.querySelector('#sun')
-
-	const getTheme = () => localStorage.getItem('theme') || 'light'
-	const setTheme = (theme: string) => {
-		document.documentElement.setAttribute('data-theme', theme)
-		getTheme() === 'light' ? sun?.classList.remove('night') : sun?.classList.add('night')
-	}
-
-	const button = document.querySelector('#darkmodebutton')
-
-	button?.addEventListener('click', () => {
-		sun?.classList.toggle('night')
-		const nextTheme = getTheme() === 'light' ? 'dark' : 'light'
-		localStorage.setItem('theme', nextTheme)
-		setTheme(nextTheme)
-	})
-
-	window.addEventListener('DOMContentLoaded', () => setTheme(getTheme()))
-	document.addEventListener('astro:after-swap', () => setTheme(getTheme()))
-</script>
 
 <style>
 	.sun div {

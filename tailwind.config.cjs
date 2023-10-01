@@ -12,7 +12,7 @@ module.exports = {
 			keyframes: {
 				'break-down': {
 					from: {
-						transform: 'translateY(0) translateX(0)',
+						transform: 'translateY(0) translateX(0)'
 					},
 					to: {
 						transform: 'translateY(61vh) translateX(-34%)',
@@ -31,13 +31,22 @@ module.exports = {
 				}
 			},
 			animation: {
-				'break': 'break-down linear forwards',
+				break: 'break-down linear forwards',
 				'fade-in': 'fade-in linear forwards',
+				'spin-slower': 'spin 35s ease infinite',
+				'spin-slow': 'spin 25s ease-in-out infinite reverse'
 			},
 			supports: {
 				'scroll-timeline': '(animation-timeline: scroll())',
 				'no-scroll-timeline': 'not (animation-timeline: scroll())'
-			}
+			},
+			typography: ({ theme }) => ({
+				DEFAULT: {
+					css: {
+						color: theme('content')
+					}
+				}
+			})
 		}
 	},
 
@@ -55,6 +64,6 @@ module.exports = {
 
 			addUtilities(newUtilities)
 		},
-		require("@tailwindcss/typography")
+		require('@tailwindcss/typography')
 	]
 }

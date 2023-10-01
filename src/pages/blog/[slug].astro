@@ -1,7 +1,7 @@
 ---
-import { getCollection, CollectionEntry } from 'astro:content'
+import { Image } from 'astro:assets'
+import { getCollection, type CollectionEntry } from 'astro:content'
 import Layout from '../../layouts/Layout.astro'
-import Image from 'astro/components/Image.astro'
 
 export const getStaticPaths = async () => {
 	const blogs = await getCollection('blogs')
@@ -25,14 +25,20 @@ type Props = {
 }
 
 const { blog } = Astro.props
+const { Content } = await blog.render()
 ---
 
 <Layout title={`${blog.data.title} 🗒`}>
-	<main class="mx-[10vw] grid justify-center py-[72px] sm:py-[78px]">
+	<main class="mx-[10vw] grid justify-center pt-[72px] sm:pt-[78px]">
 		<div>
 			<button></button>
 		</div>
-		<h1 class="my-16 text-center">{blog.data.title}</h1>
+		<h1
+			class="[text-wrap: balance] my-16 text-center text-2xl font-extrabold sm:text-5xl"
+			transition:name={`blog-title-${blog.data.title}`}
+		>
+			{blog.data.title}
+		</h1>
 		<Image
 			src={blog.data.image}
 			alt={blog.data.title}
@@ -40,6 +46,12 @@ const { blog } = Astro.props
 			height={1024 / 1.5}
 			format="webp"
 			class="mb-16 rounded-2xl object-cover shadow-xl"
+			transition:name={`blog-image-${blog.data.title}`}
 		/>
+		<div
+			class="prose prose-base relative mb-14 overflow-visible sm:prose-2xl prose-headings:text-content"
+		>
+			<Content />
+		</div>
 	</main>
 </Layout>
