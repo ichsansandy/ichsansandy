@@ -12,13 +12,20 @@ import Layout from '../layouts/Layout.astro'
 				a regular template for your web showcase
 			</p>
 		</section>
-		<section
-			class="before:animate-spin-slower after:animate-spin-slow relative mx-[10vw] flex min-h-screen items-start leading-[1] before:absolute before:right-1 before:-z-10 before:h-1/2 before:w-3/4 before:rounded-bl-full before:rounded-tr-full before:bg-accent before:blur-3xl after:absolute after:-z-10 after:h-2/3 after:w-2/3 after:rounded-bl-full after:rounded-tr-full after:bg-secondary/80 after:blur-3xl"
-		>
-			<h1 class="w-full text-left text-[min(120px,11vw)]">
-				<span class="italice line-through decoration-secondary">Master</span>
-				<span class="italice">piece</span>
-			</h1>
+		<section class="relative mx-[10vw]">
+			<div
+				class="flex min-h-[25vh] items-center justify-center before:absolute before:right-1 before:-z-10 before:h-1/2 before:w-3/4 before:animate-spin-slower before:rounded-bl-full before:rounded-tr-full before:bg-accent before:blur-3xl after:absolute after:-z-10 after:h-2/3 after:w-2/3 after:animate-spin-slow after:rounded-bl-full after:rounded-tr-full after:bg-secondary/80 after:blur-3xl mb-5 select-none"
+			>
+				<h1 class="w-full text-center text-[15vw] font-extrabold leading-[0.75]">Master Piece</h1>
+				<div class="absolute text-center text-[23vw] leading-[0.75] text-content/30">
+					Selected
+				</div>
+			</div>
+			<div class="">
+				<div>Project 1</div>
+				<div>Project 2</div>
+				<div>Project 3</div>
+			</div>
 		</section>
 		<section class="mx-[10vw] flex justify-center text-[min(120px,11vw)] leading-[1]">
 			<h1 class="w-full text-left">Reach Me</h1>
